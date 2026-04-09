@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav>
+    <h2>MyPortfolio</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a student passionate about web development.</p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="content">
+      <h1>Hello, I'm <span>Manu</span></h1>
+      <p>A passionate student & web developer</p>
+      <button onclick="showMessage()">Hire Me</button>
+    </div>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
+    <!-- Image -->
+    <div class="image">
+      <img src="profile.jpg" alt="My Photo">
+    </div>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Resume Analyzer</h3>
-            <p>Analyzes resumes automatically.</p>
-        </div>
-    </section>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a student who loves coding, designing and creating websites.</p>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <input type="text" id="name" placeholder="Your Name">
-        <button onclick="showMessage()">Submit</button>
-        <p id="msg"></p>
-    </section>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
 
-    <script src="script.js"></script>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Created using HTML, CSS, JS</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Resume Analyzer</h3>
+      <p>AI based project for resume checking</p>
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: example@gmail.com</p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
